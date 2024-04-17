@@ -75,7 +75,15 @@ const App = () => {
         </select>
       </div>
 
-      <Card countriesArray={countriesArray} filterCountries={filterCountries} />
+
+      <div className="countries">
+        {filterCountries.map((country, k) => {
+          return (
+            <Card country={country} key={k} />
+          );
+        })}
+      </div>
+
     </div>
   );
 }
