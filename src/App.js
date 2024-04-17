@@ -16,7 +16,6 @@ const App = () => {
     getCountry();
   }, []);
 
-
   const getCountry = async () => {
     const url = "https://raw.githubusercontent.com/iamspruce/search-filter-painate-reactjs/main/data/countries.json";
     try {
@@ -34,7 +33,6 @@ const App = () => {
 
   const handleOption = (e) => {
     setRegionValue(e.target.value);
-    // console.log(regionValue);
   }
 
   const handleInput = (e) => {
